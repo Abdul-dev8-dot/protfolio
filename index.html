@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Abdul Hadi | MERN Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <link rel="icon" href="images/favicon.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="images/favicon.webp">
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">ABDUL HADI</div>
+      <div class="logo">Abdul<span class="accent">.</span>Hadi</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Stack</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Abdul Hadi</div>
+      <div class="logo">Abdul<span class="accent">.</span>Hadi</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -33,231 +33,159 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Stack</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- HERO -->
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="images/main-profile1.png" alt="profile picture"  class="main-pic"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1 animate__animated animate__flipInX animate__delay-1s">Hello, I'm</p>
-        <h1 class="title animate__animated animate__flipInX animate__delay-1s">Abdul Hadi</h1>
-        <p class="section__text__p2 animate__animated animate__flipInX animate__delay-1s">MERN Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('images/hadi.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+      <div class="hero-grid">
+        <div class="section__text" data-aos="fade-right">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Abdul Hadi</h1>
+          <p class="section__text__p2">MERN Stack Developer &amp; Mobile App Builder</p>
+          <p class="hero-desc">
+            Building scalable web &amp; mobile apps with the MERN stack, Flutter,
+            Firebase, and PostgreSQL — currently shipping production code as a
+            Software Engineer at Jbbsoftech.
+          </p>
+          <div class="stack-row">
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Flutter</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">PostgreSQL</span>
+          </div>
+          <div class="btn-container">
+            <a href="images/Abdul_Hadi.pdf" download>
+              <button class="btn btn-color-2">Download CV</button>
+            </a>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Let's Talk
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/abdul-hadi-614179278" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://github.com/Abdul-dev8-dot" target="_blank" class="social-link">GitHub</a>
+            <a href="mailto:abdul8502hadi@gmail.com" class="social-link">Email</a>
+          </div>
         </div>
-        <div id="socials-container">
-          <img
-            src="images/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abdul-hadi-614179278'"
-          />
-          <img
-            src="images/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Abdul-dev8-dot'"
-          />
+        <div class="section__pic-container" data-aos="fade-left">
+          <div class="pic-frame">
+            <img src="images/main-profile1.png" alt="Abdul Hadi" class="main-pic"/>
+          </div>
+          <div class="floating-tag tag-1">June 2025 – Present<br><strong>Software Engineer @ Jbbsoftech</strong></div>
+          <div class="floating-tag tag-2">MCA · 8.5 CGPA</div>
         </div>
       </div>
+      <img src="images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#about'"/>
     </section>
+
+    <!-- ABOUT -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container" data-aos="zoom-out-right">
-          <img
-            src="images/profile-photo.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="images/profile-photo.jpeg" alt="Profile picture" class="about-pic"/>
         </div>
         <div class="about-details-container" data-aos="zoom-out-left">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="images/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Learning Journey</h3>
-              <p>MERN Stack Development <br />Web Development</p>
+              <h3>Education</h3>
+              <p>MCA — Mohamed Sathak Engineering College (8.5 CGPA)<br>
+              BCA — Syed Hameedha Arts &amp; Science College (8.2 CGPA)</p>
             </div>
             <div class="details-container">
-              <img
-                src="images/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BCA Bachelors Degree<br />MCA Masters Degree</p>
+              <h3>Currently</h3>
+              <p>Software Engineer at Jbbsoftech Pvt Ltd, building full-stack
+              web &amp; cross-platform mobile apps in production.</p>
+            </div>
+            <div class="details-container">
+              <h3>Certified</h3>
+              <p>MERN Stack Development<br>Pumo Technovation, Tambaram, Chennai</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Hi, I'm Abdul Hadi, a passionate MERN Stack Developer specializing in frontend development. I love creating responsive, user-friendly, and dynamic web applications that enhance user experiences. With a strong foundation in HTML, CSS, JavaScript, and React, I aim to build modern, efficient, and scalable web solutions.
-
-Currently, I'm expanding my expertise in full-stack development, focusing on backend technologies like Node.js, Express.js, and MongoDB to create seamless applications. My journey in web development has been fueled by curiosity, problem-solving, and a drive to keep learning and improving.
-
-When I'm not coding, I enjoy exploring new tech trends, working on personal projects, and continuously improving my skills. I'm excited to collaborate on innovative projects and contribute to impactful solutions.
+              I'm Abdul Hadi, a Full-Stack Developer working hands-on with the MERN stack
+              (MongoDB, Express.js, React.js, Node.js), Flutter, Firebase, and PostgreSQL to
+              build scalable web and mobile applications. As a Software Engineer at Jbbsoftech,
+              I develop and maintain full-stack applications, build RESTful APIs, integrate
+              authentication and real-time data with Firebase, manage relational data with
+              PostgreSQL, and ship cross-platform mobile apps with Flutter for Android and iOS.
+              <br><br>
+              I care about clean architecture, responsive accessible UI, and writing
+              maintainable code across the entire development lifecycle — from interface
+              design to backend integration and database management.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <img src="images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
+
+    <!-- SKILLS / STACK -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Stack &amp; Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container" data-aos="fade-up-right">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Frontend</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Js</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
+              <article><div><h3>HTML &amp; CSS</h3><p>Experienced</p></div></article>
+              <article><div><h3>JavaScript</h3><p>Experienced</p></div></article>
+              <article><div><h3>React.js</h3><p>Experienced</p></div></article>
+              <article><div><h3>Bootstrap / jQuery</h3><p>Intermediate</p></div></article>
+              <article><div><h3>Flutter (Dart)</h3><p>Intermediate</p></div></article>
             </div>
           </div>
           <div class="details-container" data-aos="fade-up-left">
-            <h2 class="experience-sub-title">Backend Development</h2>
+            <h2 class="experience-sub-title">Backend &amp; Data</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              <article><div><h3>Node.js / Express</h3><p>Experienced</p></div></article>
+              <article><div><h3>MongoDB</h3><p>Intermediate</p></div></article>
+              <article><div><h3>Firebase</h3><p>Intermediate</p></div></article>
+              <article><div><h3>PostgreSQL / SQL</h3><p>Intermediate</p></div></article>
+              <article><div><h3>Git</h3><p>Intermediate</p></div></article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="images/arrow.png"  
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <img src="images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#work'"/>
     </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section id="work">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="timeline" data-aos="fade-up">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">June 2025 – Present</span>
+            <h3>Software Engineer · Jbbsoftech Private Limited</h3>
+            <ul>
+              <li>Developed and maintained full-stack web applications using React.js, Node.js, Express, and MongoDB.</li>
+              <li>Built RESTful APIs and integrated Firebase &amp; PostgreSQL for authentication, real-time data, and relational database management.</li>
+              <li>Developed cross-platform mobile applications using Flutter, delivering consistent UI across Android and iOS.</li>
+              <li>Designed responsive, accessible UI components ensuring cross-browser compatibility.</li>
+              <li>Collaborated with cross-functional teams following agile development practices.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -265,113 +193,84 @@ When I'm not coding, I enjoy exploring new tech trends, working on personal proj
         <div class="about-containers">
           <div class="details-container color-container" data-aos="flip-left">
             <div class="article-container">
-              <img
-                src="images/resturent.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="images/weatherapp-placeholder.png" alt="WeatherApp" class="project-img"/>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">WeatherApp</h2>
+            <p class="project-desc">React + Vite app with live weather data via WeatherAPI, city search, and dynamic icons for temperature, humidity &amp; wind speed.</p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Abdul-dev8-dot/Restaurants-Web'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://abdul-dev8-dot.github.io/Restaurants-Web/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-dev8-dot'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container" data-aos="flip-left" data-aos-delay="300">
+          <div class="details-container color-container" data-aos="flip-left" data-aos-delay="200">
             <div class="article-container">
-              <img
-                src="images/Matrimony.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="images/resturent.png" alt="Restaurant Web" class="project-img"/>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Restaurant Web</h2>
+            <p class="project-desc">Responsive restaurant website built with HTML &amp; CSS, focused on layout and visual presentation.</p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Abdul-dev8-dot/Matrimony-Webpage'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://abdul-dev8-dot.github.io/Matrimony-Webpage/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-dev8-dot/Restaurants-Web'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://abdul-dev8-dot.github.io/Restaurants-Web/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="flip-left" data-aos-delay="400">
+            <div class="article-container">
+              <img src="images/Matrimony.png" alt="Matrimony Webpage" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Matrimony Webpage</h2>
+            <p class="project-desc">Profile-based matrimony landing page with clean, accessible UI and mobile-first layout.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-dev8-dot/Matrimony-Webpage'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://abdul-dev8-dot.github.io/Matrimony-Webpage/'">Live Demo</button>
             </div>
           </div>
           <div class="details-container color-container" data-aos="flip-left" data-aos-delay="600">
             <div class="article-container">
-              <img
-                src="images/democars.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="images/democars.png" alt="Demo Cars" class="project-img"/>
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Demo Cars</h2>
+            <p class="project-desc">Car showcase site demonstrating component layout, image galleries, and responsive grids.</p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Abdul-dev8-dot/demo-car'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://abdul-dev8-dot.github.io/demo-car/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Abdul-dev8-dot/demo-car'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://abdul-dev8-dot.github.io/demo-car/'">Live Demo</button>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <img src="images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#contact'"/>
     </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container" data-aos="fade-up">
-        <div class="contact-info-container">
-          <img
-            src="images/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:abdul8502hadi@gmail.com" target="_blank">abdul8502hadi@gmail.com</a></p>
+      <div class="contact-grid" data-aos="fade-up">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:abdul8502hadi@gmail.com">abdul8502hadi@gmail.com</a></p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="images/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/abdul-hadi-614179278" target="_blank">LinkedIn</a></p>
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p><a href="tel:+919787280600">+91 97872 80600</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/abdul-hadi-614179278" target="_blank">abdul-hadi</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/Abdul-dev8-dot" target="_blank">Abdul-dev8-dot</a></p>
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Stack</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -380,8 +279,6 @@ When I'm not coding, I enjoy exploring new tech trends, working on personal proj
       <p>Copyright &#169; 2025 Abdul Hadi. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script>AOS.init();</script>
   </body>
 </html>
